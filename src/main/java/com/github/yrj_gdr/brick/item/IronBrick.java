@@ -5,19 +5,18 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class Brick extends SwordItem {
+public class IronBrick extends SwordItem {
     private static IItemTier iItemTier = new IItemTier() {
         //耐久
         @Override
         public int getMaxUses() {
-            return 10;
+            return 50;
         }
 
         //攻击速度
@@ -29,13 +28,13 @@ public class Brick extends SwordItem {
         //攻击伤害
         @Override
         public float getAttackDamage() {
-            return 15.0F;
+            return 29.0F;
         }
 
         //掉落等级
         @Override
         public int getHarvestLevel() {
-            return 1;
+            return 2;
         }
 
         //附魔等级
@@ -47,18 +46,17 @@ public class Brick extends SwordItem {
         //修补材料
         @Override
         public Ingredient getRepairMaterial() {
-            return Ingredient.fromItems(Items.BRICK);
+            return Ingredient.fromItems(Items.IRON_INGOT);
         }
     };
-
-    public Brick(){
-        super(iItemTier,0,-3.8F,new Properties().group(ModGroup.itemGroup));
+    public IronBrick(){
+        super(iItemTier,0,-3.7F,new Properties().group(ModGroup.itemGroup));
     }
 
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tips, ITooltipFlag flagIn){
-        if(stack.getItem() instanceof Brick){
-            TextComponent tip = new TranslationTextComponent("item.brick.brick.tip");
+        if(stack.getItem() instanceof IronBrick){
+            ITextComponent tip = new TranslationTextComponent("item.brick.iron_brick.tip");
             tips.add(tip);
         }
         super.addInformation(stack,worldIn,tips,flagIn);

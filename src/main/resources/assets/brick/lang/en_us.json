@@ -1,5 +1,10 @@
 {
   "itemGroup.Brick": "Brick",
   "item.brick.brick" : "Brick",
-  "item.brick.brick.tip" : "The most classic brick, 8 hearts will disappear in one click!"
+  "item.brick.iron_brick" : "IronBrick",
+  "item.brick.gold_brick" : "GoldBrick",
+
+  "item.brick.brick.tip" : "The most classic brick, it is an artifact!",
+  "item.brick.iron_brick.tip" : "Bricks made of iron, extremely powerful!",
+  "item.brick.gold_brick.tip" : "Exclusive gold bricks for local tycoon!"
 }

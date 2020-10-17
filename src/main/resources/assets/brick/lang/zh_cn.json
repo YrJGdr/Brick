@@ -1,5 +1,10 @@
 {
   "itemGroup.Brick": "板砖",
   "item.brick.brick" : "板砖",
-  "item.brick.brick.tip" : "最经典的板砖，一击下去8颗心就没啦！"
+  "item.brick.iron_brick" : "铁砖",
+  "item.brick.gold_brick" : "金砖",
+
+  "item.brick.brick.tip" : "最经典的板砖，乃江湖神器！",
+  "item.brick.iron_brick.tip" : "铁做的砖头，攻击力极高！",
+  "item.brick.gold_brick.tip" : "土豪专属金砖！"
 }
